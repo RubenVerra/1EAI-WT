@@ -8,6 +8,7 @@ h1{
 }
 
 img {
+
   border-radius: 50%;
 }
 
@@ -15,7 +16,7 @@ img {
 text-align:center;
 display:block;
 background-color: grey;
-border: 1px solid transparent;
+border: 3px solid transparent;
 margin-right: 10px;
 margin-bottom: 1px;
 float:center;
@@ -27,17 +28,21 @@ float:center;
 
 .column {
   float: left;
+  background-color: grey;
+  border: 5px outset cyan;
   width: 33.33%;
   padding: 5px;
 }
 
+
+
 /* Clearfix (clear floats) */
-.row::after {
+/*.row::after {
   content: "";
   clear: both;
   display: table;
 }
-
+*/
 
 
 

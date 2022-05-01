@@ -1,3 +1,9 @@
+.banner {
+  border: 5px outset cyan;
+  background-color: grey;
+  text-align: center;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -16,4 +22,22 @@ table td{
 
 table tr:nth-child(odd) td {
   background-color: #e7edf0;
+}
+
+a:link {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: cyan;
+  background-color: transparent;
+
 }
