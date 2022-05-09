@@ -8,7 +8,7 @@
 * **pull**
 * **leg**
 ___
-![image html](image/logo.jpg)
+![image html](image/markdown.jpg)
  [**_this is a link_**](https://www.google.be/?hl=nl)
 ___
 ### _table_
