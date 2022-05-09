@@ -8,7 +8,7 @@
 * **pull**
 * **leg**
 ___
-![image html](C:\Users\Ruben\Documents\GitHub\1EAI-WT\image\logo.jpg)
+![image html](image/logo.jpg)
  [**_this is a link_**](www.google.com)
 ___
 ###_table_
