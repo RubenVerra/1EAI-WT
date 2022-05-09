@@ -8,9 +8,11 @@
 * **pull**
 * **leg**
 ___
+
 ![image html](image/Markdown.jpg)
- [**_this is a link_**](https://www.google.be/?hl=nl)
 ___
+
+[**_this is a link_**](https://www.google.be/?hl=nl)
 ### _table_
 
 |naam |leeftijd  | lengte|
