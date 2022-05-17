@@ -1,0 +1,43 @@
+.banner {
+  border: 5px outset cyan;
+  background-color: grey;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th {
+  text-align: left;
+  background-color: #3a6070;
+  color: #FFF;
+  padding; 4px 30px 4px 8px;
+}
+
+table td{
+  border: 1px solid #e3e3e3;
+  padding: 4px 8px;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #e7edf0;
+}
+
+a:link {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: cyan;
+  background-color: transparent;
+
+}
