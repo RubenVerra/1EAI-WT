@@ -1,7 +1,7 @@
 window.alert("welkom bij mijn javascript pagina");
 
 //colors array
-let colors = ['blue', 'yellow','black', 'red','brown','orange' ];
+let colors = ['blue', 'yellow','cyan', 'red','brown','orange' ];
 //get button
 let button = document.getElementById('button');
 
