@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+  <head>
+    <title></title>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+  </script>
+  <script>
+
+       $(document).ready(function () {
+            $("#btn").click(function () {
+              $("#test").load("data.txt", {
+                name: "Ruben",
+                lastName: "Verra"
+                }, function () {
+                    alert("hi there!");
+                });
+            });
+          });
+
+    </script>
+
+
+  </head>
+  <body>
+
+    <h2>The Jquery request Object</h2>
+    <div id="test">
+        <p>this is the first content</p>
+    </div>
+    <button  id="btn">click to change content</button>
+
+
+
+    <h2>The  XMLHttpRequest Object</h2>
+    <div id="demo">
+      <p>Let AJAX change this text.</p>
+      <button type="button" onclick="loadfile()">Change Content</button>
+    </div>
+
+
+
+    <h2 id="post">POST XMLHttpRequest</h2>
+    <p id="serverResponse"></p>
+
+
+    <h2>The XMLHttpRequest Object</h2>
+    <p>Last modified: <span id="demo2"></span></p>
+
+
+
+    <h2>The XMLHttpRequest Object</h2>
+    <button type="button" onclick="loadDoc()">Get my CD collection</button>
+    <br><br>
+    <table id="demo3"></table>
+
+
+
+
+<script>
+
+function loadfile() {
+
+  // Create an XMLHttpRequest object
+  const req = new XMLHttpRequest();
+
+  // Define a callback function
+  req.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  // Send a request
+  req.open("GET", "data2.txt");
+  req.send();
+}
+
+
+
+function loadDoc() {
+  const list = new XMLHttpRequest();
+  list.onload = function() {
+    myFunction(this);
+  }
+  list.open("GET", "cd_catalog.xml");
+  list.send();
+}
+function myFunction(xml) {
+  const xmlDoc = xml.responseXML;
+  const x = xmlDoc.getElementsByTagName("CD");
+  let table="<tr><th>Artist</th><th>Title</th></tr>";
+  for (let i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo3").innerHTML = table;
+}
+
+
+
+
+
+
+//
+
+const mod=new XMLHttpRequest();
+mod.onload = function() {
+  document.getElementById("demo2").innerHTML =
+  this.getResponseHeader("Last-Modified");
+}
+mod.open("GET", "ajax_info.txt");
+mod.send();
+
+
+//
+
+
+
+const xhr = new XMLHttpRequest();
+
+xhr.onload = function(){
+    const serverResponse = document.getElementById("serverResponse");
+    serverResponse.innerHTML = this.responseText;
+    };
+
+    xhr.open("POST", "dom.php");
+    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+    xhr.send("name=domenic&message=how's it going");
+
+
+
+
+
+
+</script>
+
+  </body>
+</html>
