@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO PERSONS (LastName, FirstName , Address, City)
-VALUES ('ruben', 'verra', 'bree')";
+VALUES ('ruben', 'verra', 'bree','Bree')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully\n";
