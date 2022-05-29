@@ -1,0 +1,52 @@
+.banner {
+  border: 5px outset cyan;
+  background-color: grey;
+  text-align: center;
+}
+h1{
+  color: cyan;
+}
+
+img {
+
+  border-radius: 50%;
+}
+
+.center {
+text-align:center;
+display:block;
+background-color: grey;
+border: 3px solid transparent;
+margin-right: 10px;
+margin-bottom: 1px;
+float:center;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  background-color: grey;
+  border: 5px outset cyan;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+
+/* Clearfix (clear floats) */
+/*.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+*/
+
+
+
+#index-gallery{
+  width:500px
+  ;
+}
